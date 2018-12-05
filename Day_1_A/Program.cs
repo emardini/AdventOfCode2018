@@ -9,7 +9,7 @@ namespace Day_1_A
     {
         static void Main(string[] args)
         {
-            var input = DataProvider.Input();
+            var input = DataProvider.Input_1();
             var inputAsList = input.ParseInputAsList().ToList();
 
 

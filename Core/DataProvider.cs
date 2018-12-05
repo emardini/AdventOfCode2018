@@ -1,10 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Core
+﻿namespace Core
 {
-    public static class DataProvider
+    public static partial class DataProvider
     {
         public static string Input_1()
         {
@@ -1260,15 +1256,6 @@ mphcuiabrnjzxokbgdtqeoylfa
 mphcuisvrnczxwkbgmtpeoylfa
 ";
         }
-
-//        public static string Input_3()
-//        {
-//            return @"
-//#1 @ 1,3: 4x4
-//#2 @ 3,1: 4x4
-//#3 @ 5,5: 2x2
-//";
-//        }
 
      
         public static string Input_3()
@@ -2564,6 +2551,6 @@ mphcuisvrnczxwkbgmtpeoylfa
 ";
 
         }
-     
+
     }
 }
