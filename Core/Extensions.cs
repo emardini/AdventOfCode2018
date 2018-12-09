@@ -21,6 +21,17 @@ namespace Core
             }
         }
 
+        public static int ManhattanDistance (int x1, int y1, int x2, int y2)
+        {
+            return Math.Abs(x2 - x1) + Math.Abs(y2 - y1);
+        }
+
+
+        public static int ParseInt(this string value)
+        {
+            return int.Parse(value);
+        }
+
         public static IEnumerable<int> ParseInputAsList(this string input)
         {
             if (string.IsNullOrWhiteSpace(input)) return new List<int>();

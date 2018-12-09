@@ -13,7 +13,8 @@ namespace Day_5_A
             Console.WriteLine(React(new StringBuilder(DataProvider.Input_5())).Length);
             Console.ReadKey();
 
-            var react = upper.Select(x => React(new StringBuilder(DataProvider.Input_5()).Replace(x, string.Empty).Replace(x.ToLower(), string.Empty))).AsParallel()
+            var react = upper.Select(x => React(new StringBuilder(DataProvider.Input_5()).Replace(x, string.Empty).Replace(x.ToLower(), string.Empty)))
+                .AsParallel()
                 .ToList()
                 .OrderBy(x => x.Length)
                 .FirstOrDefault();
