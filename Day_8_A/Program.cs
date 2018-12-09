@@ -9,8 +9,6 @@ namespace Day_8_A
     {
         static void Main(string[] args)
         {
-            var input = DataProvider.Input_8();
-            input = "2 3 0 3 10 11 12 1 1 0 1 99 2 1 1 2";
             var entries = DataProvider.Input_8().Split(" ", StringSplitOptions.RemoveEmptyEntries)
                 .Select(x => int.Parse(x)).ToList();
 
